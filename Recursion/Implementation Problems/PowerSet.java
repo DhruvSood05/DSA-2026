@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// 1. generating all subsequences 
+// 2. take  it or leave
+// 3. Make sure to remove the last element from the list so that previous element is not sent together with the recursize call
+
 public class PowerSet {
     private void backTrack(int index, int n, int[] nums, List<Integer> current, List<List<Integer>> ans) {
         if (index == n) {
